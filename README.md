@@ -17,15 +17,15 @@
 
 ## Options
 
-| Parameter | Description |
-| --------- | ----------- |
-| -h, --help | Show this help message and exit |
-| -id ID | ID of the bot (e.g.: 6907124010) REQUIRED |
-| -token TOKEN | Token of the bot (e.g.: 48302563512:itjhueorpdEv9j31jy1I5BdScXaWpQhjg) REQUIRED |
-| -message MESSAGE, -m MESSAGE | Message text to send! |
-| -file-message FILE_MESSAGE | Reads the message on a file and sets as a text to send! |
-| -wait WAIT, -w WAIT | Time to wait for the next message (In seconds) |
-| -follow-no-error-time | This flag is to disable the following error that Telegram App returns when there are too many requests ocurred it returns how many seconds the application should wait to resume the work again! |
-| -no-tor | This will disable the requests using TOR Proxy! |
+| Parameter | Description | Required |
+| --------- | ----------- | -------- |
+| -h, --help | Show this help message and exit | :white_square_button: |
+| -id ID | ID of the bot (e.g.: 6907124010) REQUIRED | :white_check_mark: |
+| -token TOKEN | Token of the bot (e.g.: 48302563512:itjhueorpdEv9j31jy1I5BdScXaWpQhjg) REQUIRED | :white_check_mark: |
+| -message MESSAGE, -m MESSAGE | Message text to send! | :white_square_button: |
+| -file-message FILE_MESSAGE | Reads the message on a file and sets as a text to send! | :white_square_button: |
+| -wait WAIT, -w WAIT | Time to wait for the next message (In seconds) | :white_square_button: |
+| -follow-no-error-time | This flag is to disable the following error that Telegram App returns when there are too many requests ocurred it returns how many seconds the application should wait to resume the work again! | :white_square_button: |
+| -no-tor | This will disable the requests using TOR Proxy! | :white_square_button: |
 
 
