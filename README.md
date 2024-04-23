@@ -3,6 +3,13 @@
 **Televil** is an automated script that allows you to spam messages into telegram bots.
 **Disclaimer**: Do not use this for evil intentions! Use it with caution!
 
+## Features
+
+- [x] Uses TOR relays to do the requests
+- [x] Detects and updates the waiting time to do more requests
+- [x] Message can be customizable
+- [ ] Can't continue when the user of the bot blocks you!
+
 
 ## Usage
 
