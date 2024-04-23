@@ -5,15 +5,15 @@
 
 ## Features
 
-- [x] Uses TOR relays to do the requests
-- [x] Detects and updates the waiting time to do more requests
-- [x] Message can be customizable
+- [x] Uses TOR relays to do the requests by default.
+- [x] Detects and updates the waiting time to do more requests.
+- [x] Message can be customizable.
 - [ ] Can't continue when the user of the bot blocks you!
 
 
 ## Usage
 
-`main.py [-h] -id ID -token TOKEN [-message MESSAGE] [-file-message FILE_MESSAGE] [-wait WAIT] [-follow-no-error-time]`
+`main.py [-h] -id ID -token TOKEN [-message MESSAGE] [-file-message FILE_MESSAGE] [-wait WAIT] [-follow-no-error-time] [-no-tor]`
 
 ## Options
 
@@ -26,5 +26,6 @@
 | -file-message FILE_MESSAGE | Reads the message on a file and sets as a text to send! |
 | -wait WAIT, -w WAIT | Time to wait for the next message (In seconds) |
 | -follow-no-error-time | This flag is to disable the following error that Telegram App returns when there are too many requests ocurred it returns how many seconds the application should wait to resume the work again! |
+| -no-tor | This will disable the requests using TOR Proxy! |
 
 

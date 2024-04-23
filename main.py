@@ -41,6 +41,7 @@ parser.add_argument('-message', '-m', help='Message text to send!')
 parser.add_argument('-file-message', help='Reads the message on a file and sets as a text to send!', type=argparse.FileType('r', encoding='utf-8'))
 parser.add_argument('-wait', '-w', help='Time to wait for the next message (In seconds)', default=10, type=int)
 parser.add_argument('-follow-no-error-time', help='This flag is to disable the following error that Telegram App returns when there are too many requests ocurred it returns how many seconds the application should wait to resume the work again!', default=False, action='store_true')
+parser.add_argument('-no-tor', help='This will disable the requests using TOR Proxy!', default=False, action='store_true')
 
 args = parser.parse_args()
 
@@ -83,10 +84,17 @@ log.info(f"Time to wait: {time_to_wait}")
 MESSAGE = quote(MESSAGE)
 URL = f"https://api.telegram.org/bot{TOKEN}/sendmessage?chat_id={ID}&text={MESSAGE}"
 
+if args.no_tor:
+    log.warn("Using NO TOR option!")
+
 urllib3.disable_warnings()
 try:
     while True:
-        client = requests.request('GET', URL, verify=False, proxies=PROXIES, headers={ 'User-Agent': USERAGENT})
+        if args.no_tor:
+            client = requests.request('GET', URL, verify=False, headers={ 'User-Agent': USERAGENT})
+        else:
+            client = requests.request('GET', URL, verify=False, proxies=PROXIES, headers={ 'User-Agent': USERAGENT})
+
         client_status_code = client.status_code
         is_ok = False
 
