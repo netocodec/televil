@@ -1,10 +1,4 @@
- _________        __                  _   __
-|  _   _  |      [  |                (_) [  |
-|_/ | | \_|.---.  | | .---.  _   __  __   | |
-    | |   / /__\\ | |/ /__\\[ \ [  ][  |  | |
-   _| |_  | \__., | || \__., \ \/ /  | |  | |
-  |_____|  '.__.'[___]'.__.'  \__/  [___][___]
-
+ ![Televil Logo](logo.png "Televil")
 
 **Televil** is an automated script that allows you to spam messages into telegram bots.
 **Disclaimer**: Do not use this for evil intentions! Use it with caution!
